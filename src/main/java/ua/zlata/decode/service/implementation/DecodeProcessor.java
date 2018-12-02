@@ -56,7 +56,7 @@ public class DecodeProcessor implements Processor<DecodeResult> {
         if (usedExamples.add(example)) {
             result.addExample(example);
         } else {
-            generateExample(ch);
+            generateNewExample(ch);
         }
     }
 
